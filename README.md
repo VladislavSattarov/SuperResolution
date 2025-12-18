@@ -17,7 +17,7 @@
 ## Установка
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/yourusername/super-easy-super-resolution.git
+git clone https://github.com/VladislavSattarov/SuperResolution.git
 cd super-easy-super-resolution
 ```
 
