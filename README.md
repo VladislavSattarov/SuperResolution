@@ -1,6 +1,6 @@
 ## Информация
 
-- Этот репозиторий был скопирован от сюда [super-resolution](https://github.com/LSTM-Kirigaya/super-easy-super-resolution)
+- Этот репозиторий был скопирован отсюда [super-resolution](https://github.com/LSTM-Kirigaya/super-easy-super-resolution)
 
 - # Описание
 Проект для повышения разрешения изображений с помощью модели ESRGAN.  
