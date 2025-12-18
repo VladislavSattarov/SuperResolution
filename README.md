@@ -18,7 +18,7 @@
 1. Клонируйте репозиторий:
 ```bash
 git clone https://github.com/VladislavSattarov/SuperResolution.git
-cd super-easy-super-resolution
+cd SuperResolution
 ```
 
 2. Сборка Docker-образа
