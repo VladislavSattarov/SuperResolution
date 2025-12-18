@@ -1,44 +1,33 @@
-# super-easy-super-resolution
-- 😊 a super easy and small project to realise super resolution (real-esr)
-- ☕ just clone & pip install some libs in common use, then you can run ! 
+## Информация
 
-## 👌 Super easy install
+- Этот репозиторий был скопирован от сюда [super-resolution](https://github.com/LSTM-Kirigaya/super-easy-super-resolution)
 
+- # Описание
+Проект для повышения разрешения изображений с помощью модели ESRGAN.  
+Реализован на Python с использованием OpenCV и PyTorch.  
+Проект контейнеризирован с помощью Docker
+
+## Используемые технологии
+- Python 3.11
+- PyTorch
+- OpenCV, Pillow, NumPy
+- Streamlit (для внутреннего интерфейса модели)
+- Docker для контейнеризации
+
+## Установка
+1. Клонируйте репозиторий:
 ```bash
-$ git clone https://github.com/LSTM-Kirigaya/super-easy-super-resolution
-$ pip install opencv-python numpy pillow torch colorama tqdm
+git clone https://github.com/yourusername/super-easy-super-resolution.git
+cd super-easy-super-resolution
 ```
 
-## 🙌 Super easy usage
-
+2. Сборка Docker-образа
 ```bash
-$ python real-esrgan.py -i image/test.jpg -o test.sr.jpg
+docker build -t super-sr .
 ```
 
-## 🐳 Use SR in your browser
-
-If you don't like command usage, we support use SR in a web app:
-
-First install streamlit
+3. Запуск проекта
+На CPU
 ```bash
-$ pip install streamlit
+docker run --rm --gpus all -v ${PWD}\images:/app/images super-sr
 ```
-
-Then, run streamlit:
-```bash
-$ python -m streamlit run app.py
-```
-
-The command will automatically open a web page in your browser:
-
-<center>
-<img src="./image/streamlit.png" alt="streamlit" style="width: 80%; height: auto;">
-</center>
-
----
-
-## Appendix: Compare reconstruction quality
-
-|   test.jpg    |   test.sr.jpg    |
-|:------------:|:------------:|
-|  <img src="./image/test.jpg" alt="Image 1" style="width: 600px; height: auto;">  |  <img src="./test.sr.jpg" alt="Image 2" style="width: 600px; height: auto;">  |
